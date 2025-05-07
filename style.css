@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f4f6f3;
+}
+.navContainer{
+   height: 10vh;
+   background-color: #2196F3;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-left: 8rem;
+}
+.logoContainer{
+    background-color: #2196F3;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navButtonContainer{
+    background-color: #2196F3;
+    flex: 2.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.navButtonContainer >*{
+    background-color: #2196F3;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    color:#f4f6f3;
+}
+
+
+.titleImageContainer{
+    height: 60vh;
+    background-color: #E3F2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.titleContainer{
+    background-color: #E3F2FD;
+    flex:1;
+    height: 22rem;
+    padding: 4rem;
+    
+}
+.titleTextContainer > *{
+    background-color:#E3F2FD;
+    color: #2196F3;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+}
+.titleButtonContainer{
+    background-color:#E3F2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
+    width: 45%;
+    margin-top: 1rem;
+    padding: 5px;
+    gap: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.exploreOurProducts{
+    flex: 5;
+    background-color: #2196F3;
+    font-size: 1rem;
+    color:#E3F2FD;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buyNow{
+    flex:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 1rem;
+    color:#2196F3;
+    border: 2px solid #2196F3;
+    border-radius: 6px;
+}
+
+.imageContainer{
+    background-color: #E3F2FD;
+    flex: 1;
+    height: 22rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.house1image{
+    height: 100%;
+    border-radius: 10px;
+}
+
+svg.lucide {
+    width: 48px;   /* Adjust size as needed */
+    height: 48px;
+    color: #2196F3; /* Optional: your theme color */
+}
+
+.features{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9rem;
+    margin: 0rem 8rem 0rem 8rem;
+}
+.featuresBox{
+    margin-top: 2rem;
+    flex:1;
+}
+
+.featuresBoxHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    color:	#212121;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+.autoCutOffHeadingText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.energySavingHeadingText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.easyInstallationHeadingText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.autoCutOffSubtext{
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+.energySavingSubtext{
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+.easyInstallationSubtext{
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    color:#555555 ;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+
+
+  
