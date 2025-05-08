@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #f4f6f3;
+    background-color: #ffffff;
 }
 .navContainer{
    height: 10vh;
@@ -142,7 +142,7 @@ svg.lucide {
     flex-direction: row;
     justify-content: flex-start;
     gap: 1rem;
-    color:	#212121;
+    color:#1a1a1a;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -188,6 +188,31 @@ svg.lucide {
 .easyInstallationSubtext{
     padding: 0.5rem 0.2rem 0.5rem 0.2rem;
     color:#555555 ;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.structuredContentSection{
+    height: 100vh;
+    background-color:#e6f3ff;
+    padding: 8rem 8rem 8rem 8rem;
+}
+.ourSolutionHeading{
+    background-color: #e6f3ff;
+    color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+.ourSolutionSubtext{
+    padding: 1rem 0rem 0rem 0rem;
+    background-color: #e6f3ff;
+    color: #555555;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
