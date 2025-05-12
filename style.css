@@ -66,7 +66,7 @@
 .titleTextContainer > *{
     background-color:transparent;
     color: #2196F3;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -262,41 +262,68 @@ svg.lucide {
 .aboutUsSection{
    position: relative;
    height: 100vh;
-   background-color: antiquewhite;
-   padding-top: 5rem;
+   background-color: #f8f9fb;
+   padding-top: 3rem;
     
 }
 .aboutUsSection * {
-    background-color:antiquewhite;
+    background-color: #f8f9fb;
 }
 .aboutUsSectionInternalContainer{
+    background-color: #f8f9fb;
     padding-top: 3rem;
     margin: 0rem 7rem 0rem 7rem;
     background-image: url();
     height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 .aboutUsSectionHeading{
-    margin: 0rem 2rem 0rem 2.8rem ;
      font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.7rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 
 }
 .aboutUsSectionParagraph{
-    margin: 1rem 3rem 0rem 3rem;
      font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 0rem;
+    color: #3b3b3b;
 
 }
+#p1 {
+    margin-top: 1rem ;
+}
 
+.ourMission{
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #2196F3;
+}
+
+.ourVision{
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #2196F3;
+}
 
 
   
