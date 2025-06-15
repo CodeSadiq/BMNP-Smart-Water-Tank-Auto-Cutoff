@@ -44,13 +44,13 @@
 
 .titleImageContainer{
     height: 60vh;
-    background-color: transparent;
+    background-color: #E3F2FD;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 4rem;
-    background-image: url(./images/waterImage.jpg);
+    /* background-image: url(./images/waterImage.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -294,12 +294,15 @@ svg.lucide {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     margin-top: 0rem;
     color: #3b3b3b;
 
+}
+#p0{
+    margin-top: 1rem;
 }
 #p1 {
     margin-top: 1rem ;
@@ -311,7 +314,7 @@ svg.lucide {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #2196F3;
 }
 
@@ -321,7 +324,7 @@ svg.lucide {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #2196F3;
 }
 
