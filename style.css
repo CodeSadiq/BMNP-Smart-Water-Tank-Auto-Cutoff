@@ -327,6 +327,45 @@ svg.lucide {
     font-size: 1.6rem;
     color: #2196F3;
 }
-
-
-  
+.productSection{
+    position: relative;
+    background-color:#ACDDAA;
+    height: 100vh;
+    margin-top: 6rem;
+}
+.productSection * {
+    background-color: transparent;
+}
+.productInternalContainer{
+    padding-top: 3rem;
+    margin: 0rem 7rem 0rem 7rem;
+    height: 80vh;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.productHeading{
+    flex: 1;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    padding: 0rem 1rem 0rem 1rem;
+    
+}
+.productBodyContainer{
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.productBodyLeft{
+    flex: 1;
+}
+.productBodyRight{
+    flex: 1;
+}
