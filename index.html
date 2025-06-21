@@ -127,6 +127,20 @@
 <script>
   lucide.createIcons();
 </script>
+<script>
+  const imageFolder = "images/";
+  const imageFiles = [
+    "switchimage0.png",
+    "switchimage1.png",
+    "switchimage2.png",
+    "switchimage3.png"
+  ];
+
+  imageFiles.forEach((file) => {
+    const img = new Image();
+    img.src = imageFolder + file;
+  });
+</script>
 <script src="./index.js" charset="UTF-8"></script>
 </body>
 </html>
