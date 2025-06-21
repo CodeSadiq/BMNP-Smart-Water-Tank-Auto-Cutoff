@@ -260,10 +260,9 @@ svg.lucide {
     justify-content: space-between;
 }
 .aboutUsSection{
-   position: relative;
    height: 100vh;
    background-color: #f8f9fb;
-   padding-top: 3rem;
+   padding-top: 4rem;
     
 }
 .aboutUsSection * {
@@ -331,10 +330,11 @@ svg.lucide {
     position: relative;
     background-color:#ACDDAA;
     height: 100vh;
-    margin-top: 6rem;
+    margin-top: 0rem;
 }
 .productSection * {
     background-color: transparent;
+    user-select: none;
 }
 .productInternalContainer{
     padding-top: 3rem;
@@ -345,13 +345,14 @@ svg.lucide {
     flex-direction: column;
 }
 .productHeading{
+    color: #212121;
     flex: 1;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     margin-top: 2rem;
     padding: 0rem 1rem 0rem 1rem;
     
@@ -365,7 +366,68 @@ svg.lucide {
 }
 .productBodyLeft{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
 }
+.productBodyParagraph{
+    flex: 8;
+    padding-left: 1rem;
+    padding-right: 1rem;
+     font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #3b3b3b;
+}
+.productBodyBullets{
+    padding: 1rem 0rem 1rem 1rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+}
+.productBodyBullets  svg.lucide{
+    width: 25px;   /* Adjust size as needed */
+    height: 30px;
+    color:#3b3b3b; /* your theme color */
+}
+.productBodyBullets #gridItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #3b3b3b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 .productBodyRight{
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.productBodyRight #container1{
+    flex: 1;
+}
+.productBodyRight #container2{
+    flex: 8;
+}
+.productBodyRight #container3{
+    flex: 1;
+}
+.productBodyRight svg.lucide{
+    color: #3b3b3b;
 }
