@@ -4,7 +4,7 @@ function nextImage(){
     if(i>3){
         i=0;
     };
-    document.querySelector("#productImageContainer img").setAttribute("src", `./images/switchimage${i}.png`)
+    document.querySelector("#productImageContainer img").setAttribute("src", `./images/switchImage${i}.png`)
     
 }
 function previousImage(){
@@ -12,7 +12,7 @@ function previousImage(){
     if(i<0){
         i=3;
     };
-    document.querySelector("#productImageContainer img").setAttribute("src", `./images/switchimage${i}.png`)
+    document.querySelector("#productImageContainer img").setAttribute("src", `./images/switchImage${i}.png`)
     
 }
 
