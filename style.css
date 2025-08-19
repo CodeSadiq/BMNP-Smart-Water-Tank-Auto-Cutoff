@@ -286,10 +286,11 @@ svg.lucide {
 }
 .aboutUsSectionContentContainer{
     background-color: #f8f9fb;
-    padding : 3rem 2rem 0rem 2rem;
+    padding : 3rem 6rem 0rem 6rem;
     margin: 0rem 4rem 0rem 4rem;
     background-image: url();
-    height: 80vh;
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

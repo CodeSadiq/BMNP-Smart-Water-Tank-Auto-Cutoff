@@ -18,3 +18,16 @@ function previousImage(){
 
 document.querySelector(".productBodyRight #container3 ").addEventListener("click" , nextImage);
 document.querySelector(".productBodyRight #container1 ").addEventListener("click" , previousImage);
+
+function changeteamfoto() {
+    var i = 1;
+    setInterval( ()=> {
+       document.querySelector("#aboutUsImageContainermain").setAttribute("src",`./images/teamimage${i}.jpg`)
+       i++
+       if(i > 2){
+        i =0;
+       }
+    },4000)
+}
+
+changeteamfoto();
