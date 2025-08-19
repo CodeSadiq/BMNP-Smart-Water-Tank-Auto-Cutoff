@@ -208,7 +208,7 @@ svg.lucide {
     font-size: 1.1rem;
 }
 
-.structuredContentSection{
+.ourSolutionSection{
     background-image: url(./images/watertank.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,8 +270,20 @@ svg.lucide {
     justify-content: space-between;
     transition: left 1s ease-in-out;
 }
-.aboutUsSection{
-   height: 200vh;
+.aboutUsImageSection{
+     height: 100vh;
+   background-color: white;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   gap: 2rem;
+}
+
+.aboutUsContentSection{
+   height: 100vh;
    background-color: white;
    padding-top: 3rem;
    padding-bottom: 3rem;
@@ -283,7 +295,7 @@ svg.lucide {
    
     
 }
-.aboutUsSection * {
+.aboutUsContentSection * {
     background-color: #f8f9fb;
 }
 .aboutUsSectionContentContainer{
@@ -412,13 +424,46 @@ svg.lucide {
     grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
 }
-.productBodyBuyNowButton{
+.productSectionButton{
     flex: 1;
-    padding: 1rem 0rem 1rem 1rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 2rem;
+    padding-left: 1rem;
+    width: 45%;
+    gap: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.productSectionMoreInfoButton{
+     flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#3b3b3b;
+    font-size: 1rem;
+    color:white;
+    border: 2px solid white;
+    border-radius: 6px;
+
+}
+
+.productSectionBuyNowButton {
+     flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 1rem;
+    color:#3b3b3b;
+    border: 2px solid #3b3b3b;
+    border-radius: 6px;
 }
 
 .productBodyBullets  svg.lucide{

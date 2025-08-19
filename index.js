@@ -58,3 +58,72 @@ function changeteamfoto() {
 
 changeteamfoto();
 
+
+
+
+  
+// To place sections on viewport 
+
+(function () {
+  const sections = Array.from(document.querySelectorAll('.snap-section'));
+  let timer;
+
+  // Custom smooth scroll function
+  function smoothScrollTo(targetY, duration = 1500) {
+    const startY = window.scrollY;
+    const distance = targetY - startY;
+    const startTime = performance.now();
+
+    function easeInOutCubic(t) {
+      return t < 0.5
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function step(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeInOutCubic(progress);
+
+      window.scrollTo(0, startY + distance * easedProgress);
+
+      if (elapsed < duration) {
+        requestAnimationFrame(step);
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // Find section with maximum visible area
+  function getMostVisibleSection() {
+    return sections.reduce((best, el) => {
+      const rect = el.getBoundingClientRect();
+      const visible =
+        Math.min(rect.bottom, window.innerHeight) -
+        Math.max(rect.top, 0);
+
+      const visibleHeight = Math.max(0, visible);
+
+      return visibleHeight > best.visible
+        ? { el, visible: visibleHeight }
+        : best;
+    }, { el: null, visible: 0 }).el;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(timer);
+
+      timer = setTimeout(() => {
+        const target = getMostVisibleSection();
+        if (target) {
+          const targetY = window.scrollY + target.getBoundingClientRect().top;
+          smoothScrollTo(targetY, 900); // 900ms smooth scroll
+        }
+      }, 10000); // wait after scroll stops
+    },
+    { passive: true }
+  );
+})();
