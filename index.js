@@ -127,3 +127,10 @@ changeteamfoto();
     { passive: true }
   );
 })();
+
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("whatsappBtn").classList.add("show");
+  }, 3000); // appears after 2 seconds
+});

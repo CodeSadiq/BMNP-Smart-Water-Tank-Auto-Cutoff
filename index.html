@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMNP: Smart Water Management for Your Home</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
@@ -82,16 +83,19 @@
          </div>
          </div>
       </div>
-
-    <div class="aboutUsImageSection snap-section " style="height: 100vh; padding: 2rem; background-color: #f8f9fb;">
+       <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+          <hr style="height: 1px; width: 4rem; background-color: #2196F3; margin: 3rem;">
+       </div>
+    <div class="aboutUsImageSection snap-section " style="height: 100vh; padding: 2rem; background-color: #f4f6f3;">
            
-            <div class="aboutUsSectionImageContainer" style="display: flex; flex-direction: row; justify-content: center; background-color: #f8f9fb; ; width: 100%; height: 100vh;">
+            <div class="aboutUsSectionImageContainer" style="display: flex; flex-direction: row; justify-content: center; background-color: #f4f6f3; ; width: 100%; height: 100vh;">
                     <img src="./images/teamimage0.jpg" id="aboutUsImageContainermain" alt="image" style="height: 91vh; ">
             </div>    
     </div>
-
+       <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+          <hr style="height: 1px; width: 4rem; background-color: #2196F3; margin: 3rem;">
+       </div>
     <div class="aboutUsContentSection  snap-section">
-            <hr style="height: 1px; width: 4rem; background-color: #2196F3;">
             <div class="aboutUsSectionContentContainer">
                 <div class="aboutUsSectionImageContainer"> 
                     <img src="./images/BMNPPoster.jpg" alt="bmnpPoster" style="height: 60vh; float: left; margin: 0rem 0rem 0rem 0rem; ">
@@ -138,12 +142,40 @@
       </div>
     </main>
     <footer>
-      
+          <div class="footerSection">
+            <div class="aboutQuickLinksFollowUsSection">
+              <div class="footerAboutUs" >
+                  <div class="aboutUsHeading footerHeading">About Us</div>
+                  <div class="aboutUsContent" id="footerParagraph">Smart water, smarter living. At BMNP, we innovate simple, sustainable solutions to save water, energy, and your time.</div>
+              </div>
+              <div class="footerQuickLinks">
+                  <div class="quickLinksHeading footerHeading">Quick Links</div>
+                  <div class="footerHome" id="footerParagraph" >Home</div>
+                  <div class="footerProduct" id="footerParagraph">Products</div>
+                  <div class="footerContact" id="footerParagraph">Contact</div>
+              </div>
+              <div class="footerFollowUs">
+                  <div class="followUsHeading footerHeading">Follow Us</div>
+                   <div  style="display: flex; flex-direction: row ; justify-content: flex-start; gap: 2rem; ">
+                      <div class="footerFacebook"  id="footerParagraph">Facebook</div>
+                      <div class="Instagram"  id="footerParagraph">Instagram</div>
+                      <div class="Linkedin"  id="footerParagraph">Linkedin</div>
+                   </div>
+              </div>
+            </div>
+            <div class="copyrightsSection">©BMNP. All rights reserved.</div>
+          </div>
     </footer>
 
 <script>
   lucide.createIcons();
 </script>
+
+<a href="https://wa.me/8951214641?text=Hello%20BMNP%20Team%2C%20I%27m%20interested%20in%20your%20product" 
+   class="whatsapp-float" target="_blank" id="whatsappBtn">
+   <img src="images/whatsapp.png" alt="WhatsApp">
+</a>
+
 <script>
   const imageFolder = "images/";
   const imageFiles = [
