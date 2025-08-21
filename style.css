@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 .navContainer{
@@ -24,12 +25,12 @@
 }
 .navButtonContainer{
     background-color: #2196F3;
-    flex: 2.4;
+    flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 .navButtonContainer >*{
     background-color: transparent;
