@@ -158,7 +158,7 @@ const iconFolder = "images/";
 // Icon files
 const iconFiles = [
   "whatsapp.png",
-  "instagram.png",
+  "Instagram.png",
   "linkedin.png"
 ];
 
