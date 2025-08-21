@@ -507,6 +507,97 @@ svg.lucide {
 }
 
 
+.founders-section {
+  height: 100vh;
+  text-align: center;
+  padding: 4rem;
+  background:#f4f4f4;
+}
+
+.founders-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+   font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: transparent;
+}
+
+.founders-section .quote {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 40px;
+  background-color: transparent;
+}
+
+.founder-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.founder-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+.founder-card h3{
+     font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+}
+
+.founder-card .profile {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #0077b5;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.role {
+  font-weight: bold;
+  color: #555;
+  margin: 5px 0;
+   font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.message {
+  font-size: 0.95rem;
+  color: #666;
+   font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
 .footerSection{
     height: 40vh;
     background-color: #222222;
@@ -573,35 +664,73 @@ svg.lucide {
     font-size: 0.7rem;
 }
 
-.whatsapp-float {
+
+/* Container */
+.floating-social {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #25D366;
-  border-radius: 50%;
+  z-index: 1000;
+}
+
+/* Social Icons Wrapper */
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  background: white;
+  padding: 0px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: width 0.3s ease, padding 0.3s ease;
+  width: 50px; /* default width (only WhatsApp visible) */
+  overflow: hidden;
+}
+
+/* Individual Icon */
+.social-icons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  cursor: pointer;
-  z-index: 9999;
-
-  /* Start hidden */
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-
-.whatsapp-float img {
-  width: 60px;
-  height: 60x;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-/* When active, show with popup */
-.whatsapp-float.show {
+.social-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Colors */
+.whatsapp { background: #25D366; }
+.instagram { background: #E4405F; }
+.linkedin { background: #0077b5; }
+
+/* Hover Animation */
+.social-icons:hover {
+  width: 200px;  /* expand to show all */
+  padding: 8px 16px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+}
+
+
+/* Initially hidden */
+.floating-social {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Visible state */
+.floating-social.show {
   opacity: 1;
   transform: scale(1);
 }
+
+

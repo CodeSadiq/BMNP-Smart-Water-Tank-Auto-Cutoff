@@ -129,8 +129,8 @@ changeteamfoto();
 })();
 
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.getElementById("whatsappBtn").classList.add("show");
-  }, 3000); // appears after 2 seconds
-});
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.querySelector(".floating-social").classList.add("show");
+    }, 4000); // 4 seconds
+  });
