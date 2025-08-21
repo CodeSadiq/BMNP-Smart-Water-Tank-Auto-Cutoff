@@ -167,3 +167,10 @@ iconFiles.forEach((file) => {
   const img = new Image();
   img.src = iconFolder + file;
 });
+
+
+window.addEventListener("load", function() {
+  if (window.location.hash) {
+    window.location.href = window.location.pathname; 
+  }
+});

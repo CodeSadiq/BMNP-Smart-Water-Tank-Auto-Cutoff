@@ -151,25 +151,37 @@
 .exploreOurProducts{
     flex: 5;
     background-color: #2196F3;
+    height: 100%;
+}
+.exploreOurProductsInternalDiv{
     font-size: 1rem;
     color:#E3F2FD;
     border-radius: 6px;
-    display: flex;
+    height: 100%;
+     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #2196F3;
 }
+
 .buyNow{
     flex:3;
+    background-color: white;
+    border: 2px solid #2196F3;
+    border-radius: 6px;
+    height: 100%;
+}
+.buyNowInternalDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
     font-size: 1rem;
     color:#2196F3;
-    border: 2px solid #2196F3;
-    border-radius: 6px;
+    border-radius:4px;
+    height: 100%;
 }
 
 .imageContainer{
@@ -504,8 +516,8 @@ svg.lucide {
     background-color:#3b3b3b;
     font-size: 1rem;
     color:white;
-    border: 2px solid white;
     border-radius: 8px;
+    height: 100%;
 
 }
 
