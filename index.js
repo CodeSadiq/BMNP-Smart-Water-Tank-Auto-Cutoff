@@ -150,3 +150,20 @@ window.addEventListener("scroll", function() {
     navbar.classList.add("navContainer");
   }
 });
+
+
+// Folder where your icons are stored
+const iconFolder = "images/";  
+
+// Icon files
+const iconFiles = [
+  "whatsapp.png",
+  "instagram.png",
+  "linkedin.png"
+];
+
+// Preload images
+iconFiles.forEach((file) => {
+  const img = new Image();
+  img.src = iconFolder + file;
+});
