@@ -134,3 +134,19 @@ changeteamfoto();
       document.querySelector(".floating-social").classList.add("show");
     }, 4000); // 4 seconds
   });
+
+
+
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  const navadminLogo = document.getElementById("navAdminLogo");
+  if (window.scrollY > 50) { // after 50px scroll
+    navbar.classList.remove("navContainer");
+    navbar.classList.add("shrink");
+    navadminLogo.classList.remove("navContainer");
+    navabar.classList.add("shrink");
+  } else {
+    navbar.classList.remove("shrink");
+    navbar.classList.add("navContainer");
+  }
+});
