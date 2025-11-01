@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Now | BMNP Smart Water Tank System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fb;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .buy-container {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 90%;
+      transition: all 0.4s ease;
+      animation: fadeUp 1.2s ease-out;
+    }
+
+    .buy-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.8rem;
+      color: #2196f3;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #1b1b1b;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2196f3;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: not-allowed;
+    }
+
+    .btn:hover {
+      background: #1976d2;
+      transform: scale(1.05);
+    }
+
+    .coming-soon {
+      margin-top: 1rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.85rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="buy-container">
+    <h1>BMNP Smart Water Tank Auto Cut-Off System</h1>
+    <p>Make your home water management smarter with our automatic cut-off system — no electricity, no sensors, just simple innovation.</p>
+    <p class="price">₹299.00 INR</p>
+    <a href="#" class="btn">Proceed to Payment</a>
+    <p class="coming-soon">Payment gateway integration coming soon...</p>
+  </div>
+  <footer>© BMNP Innovations Pvt. Ltd. | All Rights Reserved</footer>
+</body>
+</html>
