@@ -1383,11 +1383,13 @@ section {
 
 
 /* =========================
-   BUY NOW PAGE
+   BUY NOW PAGE (FIXED)
 ========================= */
 
 .buy-page {
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -1398,16 +1400,20 @@ section {
   align-items: center;
 }
 
+/* Container */
 .buy-container {
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 100px 0%;
+  margin: 0 auto;
+  padding: 100px 24px;
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 80px;
+  box-sizing: border-box;
 }
 
-/* Image */
+/* ================= IMAGE ================= */
+
 .buy-image {
   display: flex;
   justify-content: center;
@@ -1415,13 +1421,21 @@ section {
 }
 
 .buy-image img {
-  max-width: 500px;
-  height: 40dvh;
+  
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 24px;
   box-shadow: 0 30px 60px rgba(37, 99, 235, 0.18);
+  display: block;
 }
 
-/* Content */
+/* ================= CONTENT ================= */
+
+.buy-content {
+  max-width: 520px;
+}
+
 .buy-content h1 {
   font-size: 44px;
   line-height: 1.2;
@@ -1437,10 +1451,11 @@ section {
   font-size: 17px;
   color: #475569;
   margin-bottom: 26px;
-  max-width: 520px;
+  line-height: 1.65;
 }
 
-/* Features */
+/* ================= FEATURES ================= */
+
 .buy-features {
   list-style: none;
   padding: 0;
@@ -1462,11 +1477,12 @@ section {
   color: #2563eb;
 }
 
-/* Price */
+/* ================= PRICE ================= */
+
 .buy-price {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
   margin-bottom: 30px;
 }
 
@@ -1480,16 +1496,27 @@ section {
   color: #0f172a;
 }
 
+/* ================= MOBILE ================= */
 
-/* Mobile */
 @media (max-width: 900px) {
   .buy-container {
     grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 80px 16px;
     text-align: center;
   }
 
+  .buy-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .buy-content h1 {
-    font-size: 34px;
+    font-size: 32px;
+  }
+
+  .buy-image img {
+    max-width: 300px;
   }
 
   .buy-features li {
@@ -1499,8 +1526,11 @@ section {
   .buy-features li::before {
     display: none;
   }
-}
 
+  .buy-price {
+    justify-content: center;
+  }
+}
 
 
 
