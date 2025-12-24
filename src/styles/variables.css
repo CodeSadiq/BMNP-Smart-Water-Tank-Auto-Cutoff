@@ -1,0 +1,10 @@
+:root {
+  --primary: #2196f3;
+  --primary-dark: #1976d2;
+  --bg-light: #f4f6f3;
+  --text-dark: #1f2933;
+  --text-muted: #6b7280;
+
+  --radius: 14px;
+  --transition: 0.3s ease;
+}
