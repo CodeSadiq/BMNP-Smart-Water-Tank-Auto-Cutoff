@@ -63,6 +63,6 @@ Hostinger
 
 
 
-Live Website : htttps://bmnp.in
+Live Website : https://bmnp.in
 
  
