@@ -355,7 +355,7 @@ section {
   .hero {
     min-height: 100vh;
     align-items: flex-start;
-    padding: 150px 6% 70px;
+    padding: 100px 6% 70px;
 
     background:
       url("../assets/images/MobileHeroBg.png") no-repeat center center;

@@ -61,7 +61,7 @@ export default function Navbar() {
             <a  href="#founders">Founders</a>
             <a  href="#about">About</a>
             <a
-  href="https://admin.bmnp.in/login"
+  href="https://shop.bmnp.in/my-account/"
   target="_blank"
   rel="noopener noreferrer"
   className="login-btn mobile"
